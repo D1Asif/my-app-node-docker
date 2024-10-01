@@ -12,7 +12,10 @@ docker pull ubuntu
 ## Start a container from an image
 > Note 1: -it flag stands fro interactive. (It keeps the terminal interactive)
 
-> Note 2: If the image is not pulled yet, then runnin gthis command would pull the image from dockerhub and then start a container from the image 
+> Note 2: If the image is not pulled yet, then runnin gthis command would pull the image from dockerhub and then start a container from the image
+
+> Note 3: If you want to set a name of the container use this flag: `--name <Name of the container>`
+ 
 ```
 docker run -it <Name of the image>
 ```
