@@ -80,3 +80,26 @@ Or:
 docker image ls
 ```
 
+## Docker Volumes:
+A Docker volume is a persistent storage mechanism used to manage data generated and used by Docker containers. Volumes are stored outside of the container filesystem, which means that they exist independently of the lifecycle of a container. This allows for data persistence, sharing, and easier management of data in Docker environments.
+
+**create a volume:** 
+```
+docker volume create my_volume
+```
+
+**Use a Volume with a Container:** You can mount a volume to a container using the -v or --mount flag when running a container:
+```
+docker run -d -v my_volume:/path/in/container my_image
+```
+
+**List Volume:**
+```
+docker volume ls
+```
+
+**Remove Volume:**
+```
+docker volume rm my_volume
+```
+
