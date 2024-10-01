@@ -43,4 +43,40 @@ docker run -it ubuntu
    ```
    docker run mynodeapp
    ```
-   
+## Push an image to the docker hub
+1. Create the image (following the steps above) with the name `<dockerhub username>/<image name>`
+2. Then run the following command:
+   ```
+   docker push <dockerhub username>/<image name>
+   ```
+   Example:
+   ```
+   docker push d1asif/mynodeapp
+   ```
+
+## List, stop and remove the containers:
+> Note: This can be doe using the the Docker desctop GUI app as well.
+1. Find all the containers:
+   ```
+   docker container ls
+   ```
+2. Stop a container
+   > Note: Providing only first 3 digits of the ID instead of the full ID works too!
+   ```
+   docker stop <Container ID>
+   ```
+3. Remove a container:
+   > Note: Providing only first 3 digits of the ID instead of the full ID works too!
+   ```
+   docker container rm <Container ID>
+   ```
+
+## See all the images:
+```
+docker images
+```
+Or:
+```
+docker image ls
+```
+
